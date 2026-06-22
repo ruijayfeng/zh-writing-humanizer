@@ -6,7 +6,7 @@
   "private": false,
   "type": "commonjs",
   "bin": {
-    "zh-writing-humanizer": "./bin/install.js"
+    "zh-writing-humanizer": "bin/install.js"
   },
   "files": [
     "SKILL.md",
