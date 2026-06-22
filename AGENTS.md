@@ -2,11 +2,16 @@
 Markdown-based Codex/agent skill repository.
 
 <directory>
-docs/ - Planning and maintenance documentation (1 subdirectory: plans)
+agents/ - Product-specific skill metadata (1 file: openai.yaml)
+docs/ - Planning, adaptation, and validation documentation (2 subdirectories:
+plans, validation)
+scripts/ - Local release validation helpers (1 file: validate-release.ps1)
 </directory>
 
 <config>
-README.md - Project overview, positioning, and planned repository contract.
+SKILL.md - Agent-facing Chinese writing humanizer skill.
+README.md - Project overview, positioning, artifacts, and validation commands.
+UPSTREAM.md - Upstream baseline, prior-art policy, and sync checklist.
 LICENSE - MIT license for the skill and documentation.
 </config>
 
@@ -32,5 +37,6 @@ Chinese-English mixed text.
 - Update this file when top-level repository structure or maintenance policy
   changes.
 - Keep planning documents in `docs/plans/`.
-- When adding the actual skill files, document the intended agent-facing
-  structure here.
+- Keep validation fixtures in `docs/validation/`.
+- Update `docs/adaptation-map.md` when upstream rules are added, removed, or
+  reclassified.

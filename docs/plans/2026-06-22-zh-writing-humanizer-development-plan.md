@@ -123,15 +123,20 @@ Success criteria:
    - `humanizer`
    - `chinese-writing`
 
-## Current Blocker
+## Current Status
 
-The available GitHub token cannot create repositories. The attempted creation
-returned:
+The GitHub repository has been created and pushed:
 
-`Resource not accessible by personal access token`
+- Remote: `https://github.com/ruijayfeng/zh-writing-humanizer.git`
+- Branch: `main`
+- Initial commit: `dde74dc chore: initialize zh-writing-humanizer planning`
 
-Resolution options:
+Current implementation files now include:
 
-1. Create `zh-writing-humanizer` manually on GitHub, then add the remote locally.
-2. Provide or switch to a token/account with repository creation permission.
-3. Keep working locally until remote setup is available.
+- `SKILL.md` - first Chinese-first runtime skill draft, version `2.8.0-zh.1`
+- `agents/openai.yaml` - Codex UI metadata
+- `docs/adaptation-map.md` - upstream and prior-art coverage map
+- `docs/validation/` - fixture-based quality gate
+
+Next step: run validation against the fixture set and tighten the skill where
+the output falls below the `op7418/Humanizer-zh` parity bar.

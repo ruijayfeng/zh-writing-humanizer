@@ -1,4 +1,7 @@
 .agents/
 .codex/
+.npm-cache/
+.tmp-codex-home/
+*.tgz
 .DS_Store
 Thumbs.db

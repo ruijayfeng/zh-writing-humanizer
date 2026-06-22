@@ -31,14 +31,43 @@ Prior-art references:
 - `op7418/Humanizer-zh`
 - `hardikpandya/stop-slop`
 
-## Planned Artifacts
+## Artifacts
 
 - `SKILL.md` - agent-facing skill instructions
-- `agents/openai.yaml` - optional UI metadata
+- `agents/openai.yaml` - optional Codex UI metadata
 - `UPSTREAM.md` - upstream baseline and sync notes
+- `docs/adaptation-map.md` - upstream and prior-art mapping
+- `docs/validation/` - validation fixtures and release gate
 - `docs/plans/` - development planning documents
+- `scripts/validate-release.ps1` - local structure and coverage checks
 
 ## Status
 
-Planning stage. The first implementation should create a Chinese adaptation
-based on the latest reviewed `blader/humanizer` baseline.
+First implementation in progress: `2.8.0-zh.1`, based on the reviewed
+`blader/humanizer` `2.8.0` baseline. The release target is a Chinese-first
+skill that is not lower in coverage than `op7418/Humanizer-zh`.
+
+## Validation
+
+Run local release checks with:
+
+```powershell
+.\scripts\validate-release.ps1
+```
+
+For skill frontmatter validation on Windows, force UTF-8 mode:
+
+```powershell
+$env:PYTHONUTF8='1'; python C:\Users\administered\.codex\skills\.system\skill-creator\scripts\quick_validate.py .
+```
+
+## Install
+
+Use `npx` to install the skill into your local Codex skills directory:
+
+```bash
+npx zh-writing-humanizer
+```
+
+The installer copies `SKILL.md` and `agents/openai.yaml` into
+`$CODEX_HOME/skills/zh-writing-humanizer` or `~/.codex/skills/zh-writing-humanizer`.

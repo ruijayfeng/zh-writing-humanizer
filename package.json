@@ -1,0 +1,25 @@
+{
+  "name": "zh-writing-humanizer",
+  "version": "2.8.0-zh.1",
+  "description": "Chinese writing humanizer skill for removing AI-writing tells from Chinese and Chinese-English mixed text.",
+  "license": "MIT",
+  "private": false,
+  "type": "commonjs",
+  "bin": {
+    "zh-writing-humanizer": "./bin/install.js"
+  },
+  "files": [
+    "SKILL.md",
+    "agents/openai.yaml",
+    "docs/adaptation-map.md",
+    "docs/validation",
+    "scripts/validate-release.ps1",
+    "bin/install.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "validate": "powershell -ExecutionPolicy Bypass -File ./scripts/validate-release.ps1",
+    "postversion": "git push --follow-tags"
+  }
+}

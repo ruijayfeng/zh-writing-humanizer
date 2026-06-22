@@ -4,6 +4,7 @@
 
 - Repository: `blader/humanizer`
 - Current reviewed baseline: `2.8.0`
+- Current reviewed commit: `9600f2b7241cb4eed6ad803abee5ea01d67fe8e4`
 - Last reviewed date: 2026-06-22
 - Role: source of workflow, pattern taxonomy, output contract, and version
   discipline.
