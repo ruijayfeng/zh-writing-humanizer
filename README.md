@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=zh-writing-humanizer&desc=中文写作人味化技能&descSize=20&animation=fadeIn" alt="zh-writing-humanizer 横幅">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=zh-writing-humanizer&animation=fadeIn" alt="zh-writing-humanizer 横幅">
 </p>
-
-<h1 align="center">zh-writing-humanizer</h1>
 
 <p align="center">
   <strong>中文写作人味化技能 | 移除 AI 写作痕迹，让文字更像人写的</strong>
