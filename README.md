@@ -1,15 +1,37 @@
-# zh-writing-humanizer
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=zh-writing-humanizer&desc=中文写作人味化技能&descSize=20&animation=fadeIn" alt="zh-writing-humanizer 横幅">
+</p>
 
-**中文写作人味化技能 | 移除 AI 写作痕迹，让文字更像人写的**
+<h1 align="center">zh-writing-humanizer</h1>
 
-[![GitHub stars](https://img.shields.io/github/stars/ruijayfeng/zh-writing-humanizer?style=social)](https://github.com/ruijayfeng/zh-writing-humanizer/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/ruijayfeng/zh-writing-humanizer?style=social)](https://img.shields.io/github/forks/ruijayfeng/zh-writing-humanizer)
-[![GitHub license](https://img.shields.io/github/license/ruijayfeng/zh-writing-humanizer)](https://github.com/ruijayfeng/zh-writing-humanizer/blob/main/LICENSE)
-[![npm version](https://img.shields.io/npm/v/zh-writing-humanizer)](https://www.npmjs.com/package/zh-writing-humanizer)
-[![GitHub issues](https://img.shields.io/github/issues/ruijayfeng/zh-writing-humanizer)](https://github.com/ruijayfeng/zh-writing-humanizer/issues)
-[![GitHub last commit](https://img.shields.io/github/last-commit/ruijayfeng/zh-writing-humanizer)](https://github.com/ruijayfeng/zh-writing-humanizer/commits/main)
+<p align="center">
+  <strong>中文写作人味化技能 | 移除 AI 写作痕迹，让文字更像人写的</strong>
+</p>
 
-> **一句话总结：** 让 AI 写的中文文章，读起来像真人写的。
+<p align="center">
+  <a href="https://github.com/ruijayfeng/zh-writing-humanizer/stargazers">
+    <img src="https://img.shields.io/github/stars/ruijayfeng/zh-writing-humanizer?style=social" alt="GitHub stars">
+  </a>
+  <a href="https://github.com/ruijayfeng/zh-writing-humanizer/network/members">
+    <img src="https://img.shields.io/github/forks/ruijayfeng/zh-writing-humanizer?style=social" alt="GitHub forks">
+  </a>
+  <a href="https://github.com/ruijayfeng/zh-writing-humanizer/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/ruijayfeng/zh-writing-humanizer" alt="GitHub license">
+  </a>
+  <a href="https://www.npmjs.com/package/zh-writing-humanizer">
+    <img src="https://img.shields.io/npm/v/zh-writing-humanizer" alt="npm version">
+  </a>
+  <a href="https://github.com/ruijayfeng/zh-writing-humanizer/issues">
+    <img src="https://img.shields.io/github/issues/ruijayfeng/zh-writing-humanizer" alt="GitHub issues">
+  </a>
+  <a href="https://github.com/ruijayfeng/zh-writing-humanizer/commits/main">
+    <img src="https://img.shields.io/github/last-commit/ruijayfeng/zh-writing-humanizer" alt="GitHub last commit">
+  </a>
+</p>
+
+<p align="center">
+  <strong>一句话总结：</strong>让 AI 写的中文文章，读起来像真人写的。
+</p>
 
 ---
 
