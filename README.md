@@ -221,3 +221,5 @@ npx zh-writing-humanizer
 ---
 
 **如果你也想让 AI 写的中文更像人写的，试试 `zh-writing-humanizer` 吧！** 🚀
+
+<!-- pair extraordinaire test -->
