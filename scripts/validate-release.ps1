@@ -6,6 +6,9 @@ Set-Location $root
 $requiredFiles = @(
     "SKILL.md",
     "agents/openai.yaml",
+    "references/routes/technical-article.md",
+    "references/profiles/fengzhe-technical-voice.md",
+    "references/conventions/chinese-technical-style.md",
     "docs/adaptation-map.md",
     "docs/validation/quality-gate.md",
     "docs/validation/2026-06-22-release-check.md",
@@ -13,6 +16,7 @@ $requiredFiles = @(
     "docs/validation/marketing.md",
     "docs/validation/personal-essay.md",
     "docs/validation/technical.md",
+    "docs/validation/technical-article-route.md",
     "docs/validation/mixed-zh-en.md"
     "docs/validation/blind-tests.md"
 )
@@ -28,7 +32,7 @@ if ($skill -notmatch "(?s)^---\nname: zh-writing-humanizer\ndescription: Use whe
     throw "SKILL.md frontmatter is missing or malformed"
 }
 
-if ($skill -notmatch 'Version: `3\.0\.0-zh\.1`') {
+if ($skill -notmatch 'Version: `3\.0\.0-zh\.2`') {
     throw "SKILL.md version marker is missing"
 }
 
@@ -41,6 +45,7 @@ $mustHaveSections = @(
     "## Core Contract",
     "## Voice Calibration",
     "## Register Rules",
+    "## Writing Routes",
     "## Mixed Chinese-English Handling",
     "## False Positives To Preserve",
     "## Quality Gate"
@@ -67,8 +72,8 @@ foreach ($phrase in @("op7418/Humanizer-zh", "Prior-Art Parity Check", "Chinese-
 $fixtureFiles = Get-ChildItem -LiteralPath "docs/validation" -Filter "*.md" |
     Where-Object { $_.Name -notin @("quality-gate.md", "2026-06-22-release-check.md") }
 
-if ($fixtureFiles.Count -ne 6) {
-    throw "Expected 6 validation fixtures, found $($fixtureFiles.Count)"
+if ($fixtureFiles.Count -ne 7) {
+    throw "Expected 7 validation fixtures, found $($fixtureFiles.Count)"
 }
 
 foreach ($fixture in $fixtureFiles) {

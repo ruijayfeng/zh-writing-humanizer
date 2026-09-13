@@ -1,7 +1,7 @@
 interface:
   display_name: "Chinese Writing Humanizer"
-  short_description: "Remove AI traces from Chinese writing while preserving register and meaning."
-  default_prompt: "Use $zh-writing-humanizer to rewrite this Chinese text so it sounds natural while preserving its meaning and register."
+  short_description: "Humanize Chinese writing with a routed technical-article voice."
+  default_prompt: "Use $zh-writing-humanizer to rewrite this Chinese text naturally, or draft a technical article through its technical-writing route."
 
 policy:
   allow_implicit_invocation: true

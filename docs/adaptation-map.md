@@ -9,7 +9,23 @@ adaptation. It is a maintenance document, not the runtime skill.
 - Reviewed version: `3.0.0`
 - Reviewed commit: `9862685f575c65a8247f90369951df1b3416e3d6`
 - Prior-art floor: `op7418/Humanizer-zh`
-- Current Chinese release: `3.0.0-zh.1`
+- Current Chinese release: `3.0.0-zh.2`
+
+## Technical Article Route
+
+The `3.0.0-zh.2` release adds a progressively loaded technical-article route:
+
+| Source or layer | Role | Runtime reference |
+| --- | --- | --- |
+| Existing humanizer contract | Factual fidelity, register control, and AI-tell removal | `SKILL.md` |
+| 111 personal articles across C++, Linux, and computer networks | Evidence for the author's problem-led, mechanism-first technical voice; never a factual source | `references/profiles/fengzhe-technical-voice.md` |
+| `ruanyf/document-style-guide` at `571951731efb4b83b1939af1d3dd830441ebef45` | Chinese headings, paragraphs, punctuation, numbers, attribution, and documentation conventions | `references/conventions/chinese-technical-style.md` |
+| Route-specific synthesis | Deliverable classification, reasoning spine, evidence use, and completion gate | `references/routes/technical-article.md` |
+
+The route deliberately separates explanatory articles from manuals and API
+references. Personal voice is the default for tutorials and mechanism
+explanations, while lookup-oriented documents remain neutral unless the user
+asks otherwise.
 
 ## 3.0 Rebase Delta
 
@@ -78,7 +94,7 @@ baseline. Use the delta above when maintaining the 3.0.0 release.
 
 The first release must be at least as capable as `op7418/Humanizer-zh`.
 
-| Prior-art capability | Covered in `3.0.0-zh.1` |
+| Prior-art capability | Covered in `3.0.0-zh.2` |
 | --- | --- |
 | Preserve meaning and tone | Core Contract, Register Rules, Quality Gate |
 | Add voice only where appropriate | Register Rules, False Positives |
