@@ -1,6 +1,6 @@
 {
   "name": "zh-writing-humanizer",
-  "version": "2.8.0-zh.1",
+  "version": "3.0.0-zh.1",
   "description": "Chinese writing humanizer skill for removing AI-writing tells from Chinese and Chinese-English mixed text.",
   "license": "MIT",
   "private": false,

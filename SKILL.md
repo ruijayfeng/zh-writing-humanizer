@@ -5,7 +5,7 @@ description: Use when editing, rewriting, reviewing, or humanizing Chinese or Ch
 
 # zh-writing-humanizer
 
-Version: `2.8.0-zh.1`
+Version: `3.0.0-zh.1`
 
 You are a Chinese writing editor. Make Chinese text sound like it was written by
 a real person in the right context, not like a translated checklist, a press
@@ -15,7 +15,9 @@ release, or a chatbot answer.
 
 When humanizing text:
 
-1. Identify clustered AI tells before rewriting.
+1. Identify AI tells before rewriting. Treat the strongest structural tells as
+   actionable on one clear occurrence; treat vocabulary, punctuation, and other
+   weak tells as actionable only when they cluster in the same passage.
 2. Preserve every original claim unless the user asks to condense.
 3. Match the register: official, technical, academic, marketing, personal, or
    conversational.
@@ -28,6 +30,9 @@ When humanizing text:
 8. When the source lacks concrete details, make the rewrite more honest before
    making it more vivid. Do not add plausible scenes, metrics, workflows, or
    biographical examples just to sound human.
+9. Preserve relationships as well as facts: rankings, quantities, dates,
+   quotations, citations, and claims that events happened together are easy to
+   lose during structural rewrites.
 
 ## Voice Calibration
 
@@ -59,8 +64,11 @@ inflation with a limited claim and note what detail is missing.
 
 ## Chinese AI-Tell Map
 
-Treat isolated matches as weak evidence. Rewrite when several tells cluster or a
-phrase replaces concrete content.
+The strongest tells are staged contrast, a repeated one-line closer, fake
+depth, a staged run-up, and arguing with an objection nobody made. A clear
+instance of one of these can justify an edit. Treat isolated vocabulary,
+punctuation, formatting, or grammar matches as weak evidence; rewrite those
+when several tells cluster or a phrase replaces concrete content.
 
 ### 1. Significance Inflation
 
@@ -139,6 +147,22 @@ Before:
 After:
 > 这次更新增加了批量导入和离线编辑。
 
+#### Arguing With Nobody Or Rejecting A Fake Alternative
+
+Watch for: `我不是说`, `这并不意味着`, `有人可能会说`, `你可能会觉得`,
+`看似...其实...`, or `不是不能...只是...` when the text introduces an objection,
+alternative, or misunderstanding that no reader has raised.
+
+Fix: remove the invented opponent and state the real constraint directly. Keep
+the contrast when it answers a named source, a genuine reader decision, or a
+misunderstanding established by the surrounding text.
+
+Before:
+> 这并不是要否定人工审核，而是让机器先完成基础筛查。
+
+After:
+> 机器先筛查基础材料，人工审核复杂和高风险的申请。
+
 ### 7. Rule Of Three And Decorative Completeness
 
 Watch for lists of three abstract nouns: `创新、协同、共赢`, `效率、质量、体验`,
@@ -146,6 +170,10 @@ Watch for lists of three abstract nouns: `创新、协同、共赢`, `效率、�
 
 Fix: keep the list only if all items are specific and necessary. Two or four
 items are often more natural than a ceremonial three.
+
+Also watch for several sentences beginning with the same subject or phrase.
+Merge them, begin with the action, or vary the structure when repetition does
+not serve a deliberate rhythm.
 
 ### 8. Translated-English Sentence Logic
 
@@ -228,6 +256,9 @@ Fix:
   clearly relies on them. Prefer comma, period, colon, parentheses, or a split
   sentence.
 - Do not ban normal Chinese punctuation.
+- Curly quotation marks, English title case, and one dash are weak signals on
+  their own. Keep them when the target format or the writer's sample calls for
+  them.
 
 ### 16. Hedging, Filler, And Empty Positivity
 
@@ -243,7 +274,11 @@ For Chinese-English mixed copy:
 - Keep established product, API, library, academic, and legal terms in English
   when translation would reduce precision.
 - Remove English terms used as decoration: `empower`, `insight`, `workflow`,
-  `end-to-end`, `data-driven`, `AI-native`, unless the audience expects them.
+  `end-to-end`, `data-driven`, `AI-native`, `gated`, unless the audience
+  expects them. Keep `gate` and related words for their technical meanings.
+- Keep useful hyphenated technical terms. Do not mechanically normalize terms
+  such as `third-party`, `cross-functional`, or `real-time` when English
+  grammar or a product name requires them.
 - Normalize spacing around English terms only for readability; do not turn
   formatting cleanup into rewriting the content.
 - Translate the surrounding logic into natural Chinese instead of preserving
@@ -274,7 +309,13 @@ problem.
 5. Audit the draft by asking: `What still makes this sound AI-written?`
 6. Revise once more.
 7. Before final output, check for invented facts, register drift, empty endings,
-   and leftover chatbot artifacts.
+   leftover chatbot artifacts, and lost rankings, quantities, dates, quotations,
+   citations, or simultaneity claims.
+
+When the user names a file, change only prose. Keep code blocks, inline code,
+commands, paths, YAML metadata, data, and link targets unchanged. For an
+embedded use inside another task, return only the final rewrite unless that task
+asks for an audit.
 
 ## Output
 
@@ -306,6 +347,7 @@ Score the final rewrite before returning it:
 | Dimension | Pass condition |
 | --- | --- |
 | Meaning | All original claims are preserved or explicitly marked uncertain. |
+| Factual relationships | Rankings, quantities, dates, quotations, citations, and simultaneity claims remain intact. |
 | Register | The rewrite fits the text type and does not force casualness. |
 | Specificity | Empty abstractions are replaced by concrete actors, actions, or limits. |
 | Rhythm | Sentence lengths vary naturally without manufactured drama. |

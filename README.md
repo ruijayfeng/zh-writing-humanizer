@@ -204,8 +204,8 @@ npx zh-writing-humanizer
 
 ## 📊 项目状态
 
-- **当前版本：** `2.8.0-zh.1`
-- **基于上游：** `blader/humanizer` 2.8.0
+- **当前版本：** `3.0.0-zh.1`
+- **基于上游：** `blader/humanizer` 3.0.0
 - **状态：** 积极开发中
 - **目标：** 覆盖率不低于 `op7418/Humanizer-zh`
 

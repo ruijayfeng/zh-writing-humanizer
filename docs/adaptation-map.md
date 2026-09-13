@@ -1,15 +1,33 @@
 # zh-writing-humanizer Adaptation Map
 
-This map records how upstream `blader/humanizer` `2.8.0` maps into the first
-Chinese adaptation. It is a maintenance document, not the runtime skill.
+This map records how upstream `blader/humanizer` `3.0.0` maps into the Chinese
+adaptation. It is a maintenance document, not the runtime skill.
 
 ## Baseline
 
 - Primary upstream: `blader/humanizer`
-- Reviewed version: `2.8.0`
-- Reviewed commit: `9600f2b7241cb4eed6ad803abee5ea01d67fe8e4`
+- Reviewed version: `3.0.0`
+- Reviewed commit: `9862685f575c65a8247f90369951df1b3416e3d6`
 - Prior-art floor: `op7418/Humanizer-zh`
-- First Chinese release target: `2.8.0-zh.1`
+- Current Chinese release: `3.0.0-zh.1`
+
+## 3.0 Rebase Delta
+
+Upstream 3.0 reduces the catalog to 25 patterns and orders them by evidence
+strength. The Chinese skill preserves its Chinese-native grouping, but adopts
+the following workflow and pattern changes:
+
+| Upstream 3.0 change | Chinese adaptation |
+| --- | --- |
+| Strong tells can justify one edit; weak tells need a cluster | Added strength guidance before the Chinese pattern map. Vocabulary, punctuation, and formatting remain weak alone. |
+| Arguing with no one | Added `Arguing With Nobody Or Rejecting A Fake Alternative` under mechanical contrast. |
+| Repeated sentence openings | Added to `Rule Of Three And Decorative Completeness`; Chinese repetition remains acceptable when it is deliberate rhythm. |
+| Stacked qualifiers and current AI vocabulary | Retained in `Hedging, Filler, And Empty Positivity` and mixed-text handling; `gated` is decorative only outside its technical meaning. |
+| Preserve ranks, simultaneity, and other factual relations | Added explicit preservation and final-audit checks for rankings, quantities, dates, quotations, citations, and simultaneity. |
+| File and embedded invocation modes | Added file-mode protection for code, inline code, commands, paths, YAML, data, and link targets; embedded use returns only the rewrite by default. |
+
+The older rule table below remains a historical crosswalk for the 2.8.0
+baseline. Use the delta above when maintaining the 3.0.0 release.
 
 ## Mapping Classes
 
@@ -60,7 +78,7 @@ Chinese adaptation. It is a maintenance document, not the runtime skill.
 
 The first release must be at least as capable as `op7418/Humanizer-zh`.
 
-| Prior-art capability | Covered in `2.8.0-zh.1` |
+| Prior-art capability | Covered in `3.0.0-zh.1` |
 | --- | --- |
 | Preserve meaning and tone | Core Contract, Register Rules, Quality Gate |
 | Add voice only where appropriate | Register Rules, False Positives |
