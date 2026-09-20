@@ -9,6 +9,8 @@ Use these fixtures before publishing a new release or claiming parity with
 - `marketing.md`
 - `personal-essay.md`
 - `technical.md`
+- `technical-article-route.md`
+- `public-account-route.md`
 - `mixed-zh-en.md`
 - `blind-tests.md`
 

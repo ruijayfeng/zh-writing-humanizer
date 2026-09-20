@@ -21,6 +21,21 @@ function copyFile(src, dest) {
   fs.copyFileSync(src, dest);
 }
 
+function copyDirectory(src, dest) {
+  fs.mkdirSync(dest, { recursive: true });
+
+  for (const entry of fs.readdirSync(src, { withFileTypes: true })) {
+    const sourcePath = path.join(src, entry.name);
+    const destinationPath = path.join(dest, entry.name);
+
+    if (entry.isDirectory()) {
+      copyDirectory(sourcePath, destinationPath);
+    } else if (entry.isFile()) {
+      copyFile(sourcePath, destinationPath);
+    }
+  }
+}
+
 function main() {
   const repoRoot = path.resolve(__dirname, "..");
   const destRoot = resolveSkillHome();
@@ -29,8 +44,13 @@ function main() {
   fs.mkdirSync(skillDir, { recursive: true });
   copyFile(path.join(repoRoot, "SKILL.md"), path.join(skillDir, "SKILL.md"));
   copyFile(path.join(repoRoot, "agents", "openai.yaml"), path.join(skillDir, "agents", "openai.yaml"));
+  copyDirectory(path.join(repoRoot, "references"), path.join(skillDir, "references"));
 
   console.log(`Installed zh-writing-humanizer to ${skillDir}`);
 }
 
-main();
+if (require.main === module) {
+  main();
+}
+
+module.exports = { copyDirectory };

@@ -6,14 +6,22 @@ Set-Location $root
 $requiredFiles = @(
     "SKILL.md",
     "agents/openai.yaml",
+    "references/routes/technical-article.md",
+    "references/routes/public-account-article.md",
+    "references/profiles/technical-article-voice.md",
+    "references/profiles/public-account-voice.md",
+    "references/conventions/chinese-technical-style.md",
     "docs/adaptation-map.md",
     "docs/validation/quality-gate.md",
     "docs/validation/2026-06-22-release-check.md",
+    "docs/validation/2026-09-20-release-check.md",
     "docs/validation/officialese.md",
     "docs/validation/marketing.md",
     "docs/validation/personal-essay.md",
     "docs/validation/technical.md",
-    "docs/validation/mixed-zh-en.md"
+    "docs/validation/technical-article-route.md",
+    "docs/validation/public-account-route.md",
+    "docs/validation/mixed-zh-en.md",
     "docs/validation/blind-tests.md"
 )
 
@@ -28,7 +36,7 @@ if ($skill -notmatch "(?s)^---\nname: zh-writing-humanizer\ndescription: Use whe
     throw "SKILL.md frontmatter is missing or malformed"
 }
 
-if ($skill -notmatch 'Version: `3\.0\.0-zh\.1`') {
+if ($skill -notmatch 'Version: `3\.0\.0-zh\.3`') {
     throw "SKILL.md version marker is missing"
 }
 
@@ -41,6 +49,7 @@ $mustHaveSections = @(
     "## Core Contract",
     "## Voice Calibration",
     "## Register Rules",
+    "## Writing Routes",
     "## Mixed Chinese-English Handling",
     "## False Positives To Preserve",
     "## Quality Gate"
@@ -65,10 +74,10 @@ foreach ($phrase in @("op7418/Humanizer-zh", "Prior-Art Parity Check", "Chinese-
 }
 
 $fixtureFiles = Get-ChildItem -LiteralPath "docs/validation" -Filter "*.md" |
-    Where-Object { $_.Name -notin @("quality-gate.md", "2026-06-22-release-check.md") }
+    Where-Object { $_.Name -ne "quality-gate.md" -and $_.Name -notlike "*-release-check.md" }
 
-if ($fixtureFiles.Count -ne 6) {
-    throw "Expected 6 validation fixtures, found $($fixtureFiles.Count)"
+if ($fixtureFiles.Count -ne 8) {
+    throw "Expected 8 validation fixtures, found $($fixtureFiles.Count)"
 }
 
 foreach ($fixture in $fixtureFiles) {
@@ -83,6 +92,27 @@ foreach ($fixture in $fixtureFiles) {
         if (-not $content.Contains($section)) {
             throw "$($fixture.Name) is missing section: $section"
         }
+    }
+}
+
+$runtimeFiles = @(
+    "SKILL.md",
+    "references/routes/technical-article.md",
+    "references/routes/public-account-article.md",
+    "references/profiles/technical-article-voice.md",
+    "references/profiles/public-account-voice.md"
+)
+$runtime = ($runtimeFiles | ForEach-Object {
+    Get-Content -LiteralPath $_ -Raw -Encoding utf8
+}) -join "`n"
+
+foreach ($requiredMarker in @(
+    "技术文章写作风格",
+    "公众号写作风格",
+    "凯冰"
+)) {
+    if (-not $runtime.Contains($requiredMarker)) {
+        throw "Runtime writing guidance is missing: $requiredMarker"
     }
 }
 

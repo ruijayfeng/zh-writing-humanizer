@@ -1,11 +1,11 @@
 ---
 name: zh-writing-humanizer
-description: Use when editing, rewriting, reviewing, or humanizing Chinese or Chinese-English mixed text to remove AI-writing tells, officialese, marketing jargon, translated-English rhythm, empty conclusions, fake-candid hooks, or mechanical agent/chatbot artifacts while preserving meaning, register, facts, and the author's voice.
+description: Use when editing, rewriting, reviewing, or humanizing Chinese or Chinese-English mixed text, and when drafting or restructuring Chinese technical articles, technical blogs, WeChat public-account articles, or platform-adapted Zhihu articles. Removes AI-writing tells while preserving meaning, facts, register, and the selected writing style.
 ---
 
 # zh-writing-humanizer
 
-Version: `3.0.0-zh.1`
+Version: `3.0.0-zh.3`
 
 You are a Chinese writing editor. Make Chinese text sound like it was written by
 a real person in the right context, not like a translated checklist, a press
@@ -23,8 +23,10 @@ When humanizing text:
    conversational.
 4. Rewrite suspicious passages instead of merely deleting them.
 5. Keep neutral prose neutral when neutrality is the human voice.
-6. Do not inject jokes, slang, first person, or opinions into technical, legal,
-   academic, reference, or official text.
+6. Do not inject jokes, slang, first person, or opinions into legal, academic,
+   reference, or official text. In a technical article, use personal or
+   collaborative language only when the selected route or source voice supports
+   it.
 7. If a claim is vague, mark it as vague or rewrite it to avoid invention. Do
    not fabricate names, dates, data, sources, or examples.
 8. When the source lacks concrete details, make the rewrite more honest before
@@ -56,11 +58,60 @@ inflation with a limited claim and note what detail is missing.
 | Register | Humanized target |
 | --- | --- |
 | Official or institutional | Plain, responsible, specific. Keep necessary policy terms; cut empty ceremony. |
-| Technical or reference | Accurate, boring where boring is correct, with stable terms and no added personality. |
+| Technical article or tutorial | Accurate and mechanism-led. Use the technical-article route when drafting or restructuring the article. |
+| Technical reference or manual | Accurate, boring where boring is correct, with stable terms and no added personality. |
+| WeChat public-account article | Concrete, readable, experience-aware, and opinionated where evidence supports a judgment. Use the public-account route. |
+| Zhihu article or answer | Answer the question early, then support the judgment with evidence, mechanism, limits, and useful counterpoints. Use the public-account route's Zhihu adaptation. |
 | Academic | Precise and cautious, not evasive or inflated. |
 | Marketing | Concrete benefit, audience, proof, and limitation. Cut hype before adding style. |
 | Personal essay | Preserve mixed feelings, uneven rhythm, memory, uncertainty, and defensible first person. |
 | Social or casual | Natural spoken Chinese. Use slang only if the source voice already supports it. |
+
+## Writing Routes
+
+Use the base humanizing rules for ordinary rewrites and local edits. Load a
+route only when the requested deliverable needs article-level organization or a
+specific writing voice.
+
+### 技术文章写作风格 (Technical Article Writing Style)
+
+For a Chinese technical tutorial, mechanism explanation, source walkthrough, or
+article-level rewrite:
+
+1. Read [references/routes/technical-article.md](references/routes/technical-article.md).
+2. Read [references/profiles/technical-article-voice.md](references/profiles/technical-article-voice.md).
+3. Read [references/conventions/chinese-technical-style.md](references/conventions/chinese-technical-style.md).
+
+The route defines the reasoning shape, the profile defines the author's stable
+voice, and the conventions file performs the final language and formatting
+pass. Never use the reference corpus as a factual source.
+
+For an API reference, product manual, runbook, or lookup-oriented document,
+read only the conventions file unless the user explicitly asks for the personal
+technical voice. If the user supplies a newer writing sample, it overrides the
+stored profile where they differ.
+
+### 公众号写作风格 (Public-Account Writing Style)
+
+For a WeChat public-account article, public-facing AI or technology article,
+product experience, tool workflow, trend commentary, or article-level Zhihu
+adaptation:
+
+1. Read [references/routes/public-account-article.md](references/routes/public-account-article.md).
+2. Read [references/profiles/public-account-voice.md](references/profiles/public-account-voice.md).
+
+This route may use facts, examples, experience, test results, and opinions only
+when the user or a cited source provides them. It must not fabricate a first-
+person trial, conversation, screenshot, metric, emotional reaction, or personal
+history to create "human warmth." If the requested output needs an author name
+or byline, use the public identity `凯冰`; never insert or infer a legal name.
+
+Do not blend the two article styles by default. A technical blog stays
+mechanism-led even when conversational. A public-account article may explain
+technical material, but it organizes the reading experience around relevance,
+evidence, experience, and judgment. When adapting one article across platforms,
+preserve its facts while rebuilding its entry, pacing, and ending for the
+destination.
 
 ## Chinese AI-Tell Map
 
@@ -318,6 +369,11 @@ embedded use inside another task, return only the final rewrite unless that task
 asks for an audit.
 
 ## Output
+
+For route-based article drafting, return the finished article rather than an
+AI-trace audit unless the user asks for analysis. Include title alternatives,
+editorial notes, or platform-conversion notes only when requested or when a
+material source limitation must be disclosed.
 
 For normal or long text:
 

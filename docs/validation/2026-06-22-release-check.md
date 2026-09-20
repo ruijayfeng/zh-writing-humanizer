@@ -1,6 +1,6 @@
 # 2026-09-13 Release Check
 
-Target: `3.0.0-zh.1`
+Target: `3.0.0-zh.2`
 
 ## Evidence
 
@@ -49,10 +49,12 @@ Release structure validation passed.
 | Cover prior-art 24 pattern families | `docs/adaptation-map.md` prior-art parity table maps every family into `SKILL.md`. | Pass |
 | Track upstream 3.0.0 and retain Chinese-native adaptation | `docs/adaptation-map.md` records the v3.0.0 baseline and its Chinese rebase delta. | Pass |
 | Apply upstream evidence strength and structural checks | `SKILL.md` distinguishes strong and weak tells, adds fake-opponent and repeated-opening checks, and protects factual relationships. | Pass |
+| Route technical articles without affecting other registers | `SKILL.md` loads the technical route, personal voice, and Chinese conventions only for article-level technical work. | Pass |
+| Package route references | `package.json` and `bin/install.js` include the complete `references/` tree. | Pass |
 | Add Chinese-native rule groups | `SKILL.md` includes officialese, startup jargon, Chinese slogans, fake-candid hooks, translated-English logic, and mixed Chinese-English handling. | Pass |
 | Prevent over-editing | `SKILL.md` has false-positive rules for official, technical, academic, regional, personal, and dry prose. | Pass |
-| Provide validation fixtures | Six fixtures cover officialese, marketing, personal essay, technical Chinese, mixed Chinese-English text, and blind-test samples. | Pass |
-| Make validation repeatable | `scripts/validate-release.ps1` checks required files, version metadata, 16 rule groups, 33 historical upstream mappings, and fixture sections. | Pass |
+| Provide validation fixtures | Seven fixtures cover officialese, marketing, personal essay, technical Chinese, the routed personal technical voice, mixed Chinese-English text, and blind-test samples. | Pass |
+| Make validation repeatable | `scripts/validate-release.ps1` checks required files, route references, version metadata, 16 rule groups, 33 historical upstream mappings, and fixture sections. | Pass |
 
 ## Fixture Review
 
@@ -62,6 +64,7 @@ Release structure validation passed.
 | `marketing.md` | Replace hype with feature/user/workflow specifics without unsupported claims. | Pass |
 | `personal-essay.md` | Preserve emotion through concrete detail instead of slogans. | Pass |
 | `technical.md` | Keep precise neutral technical prose and avoid personality injection. | Pass |
+| `technical-article-route.md` | Use the personal reasoning voice for explanatory articles while leaving reference documents neutral. | Pass |
 | `mixed-zh-en.md` | Keep justified terms, remove decorative English jargon, naturalize Chinese logic. | Pass |
 | `blind-tests.md` | Verify unseen samples, catch invention risk, and confirm the tightened skill passes all six quality dimensions. | Pass |
 

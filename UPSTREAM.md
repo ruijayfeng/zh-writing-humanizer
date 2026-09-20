@@ -11,6 +11,16 @@
 
 ## Prior-Art References
 
+### `ruanyf/document-style-guide`
+
+- Reviewed commit: `571951731efb4b83b1939af1d3dd830441ebef45`
+- Last reviewed date: 2026-09-13
+- Role: language, punctuation, number, heading, paragraph, attribution, and
+  document-structure conventions for the technical-writing route.
+
+Use as a conventions source, not as the author's voice. Adapt its manual-first
+rules when they conflict with a problem-led explanatory article.
+
 ### `op7418/Humanizer-zh`
 
 Role: Chinese localization reference for early Humanizer content.
