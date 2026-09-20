@@ -9,23 +9,49 @@ adaptation. It is a maintenance document, not the runtime skill.
 - Reviewed version: `3.0.0`
 - Reviewed commit: `9862685f575c65a8247f90369951df1b3416e3d6`
 - Prior-art floor: `op7418/Humanizer-zh`
-- Current Chinese release: `3.0.0-zh.2`
+- Current Chinese release: `3.0.0-zh.3`
 
 ## Technical Article Route
 
-The `3.0.0-zh.2` release adds a progressively loaded technical-article route:
+The `3.0.0-zh.2` release added a progressively loaded technical-article route.
+The `3.0.0-zh.3` release removes personal names from runtime profile names and
+adds a separate public-account writing route without weakening the technical
+route:
 
 | Source or layer | Role | Runtime reference |
 | --- | --- | --- |
 | Existing humanizer contract | Factual fidelity, register control, and AI-tell removal | `SKILL.md` |
-| 111 personal articles across C++, Linux, and computer networks | Evidence for the author's problem-led, mechanism-first technical voice; never a factual source | `references/profiles/fengzhe-technical-voice.md` |
+| 111 personal articles across C++, Linux, and computer networks | Evidence for a problem-led, mechanism-first technical voice; never a factual source | `references/profiles/technical-article-voice.md` |
 | `ruanyf/document-style-guide` at `571951731efb4b83b1939af1d3dd830441ebef45` | Chinese headings, paragraphs, punctuation, numbers, attribution, and documentation conventions | `references/conventions/chinese-technical-style.md` |
 | Route-specific synthesis | Deliverable classification, reasoning spine, evidence use, and completion gate | `references/routes/technical-article.md` |
+| Public technology writing research plus the user's stable reasoning habits | Evidence for an accessible, practitioner-led public voice; never permission to impersonate another creator | `references/profiles/public-account-voice.md` |
+| Public-account route synthesis | WeChat topic checks, article shapes, source boundaries, platform pacing, and Zhihu adaptation | `references/routes/public-account-article.md` |
 
 The route deliberately separates explanatory articles from manuals and API
 references. Personal voice is the default for tutorials and mechanism
 explanations, while lookup-oriented documents remain neutral unless the user
 asks otherwise.
+
+The public-account route borrows only general techniques found across strong
+public technology writing: quick entry, concrete experience, clear judgment,
+honest limits, and reader momentum. It explicitly rejects copied catchphrases,
+signature endings, fabricated first-person scenes, and creator impersonation.
+The public identity is `凯冰` only when a byline or self-introduction is
+requested; the skill does not store or emit a legal name.
+
+### Public Writing Research
+
+Public sources reviewed on 2026-09-20 informed the route at the technique level:
+
+| Public source | Transferable observation | Explicit exclusion |
+| --- | --- | --- |
+| 苍何 public site and public article mirrors | Result-led entry, visible project outcomes, stepwise demonstrations, and fast explanation of reader value | Do not copy hype density, jokes, catchphrases, or fixed engagement prompts |
+| 阿真 Irene public article mirrors | Friendly practitioner perspective, approachable setup, candid product judgment, and concrete limitations | Do not manufacture intimacy, personal reactions, or supplied-experience claims |
+| `KKKKhazix/khazix-skills` public `khazix-writer` | Strong source boundaries, first-hand practice, topic viability checks, and deliberate reader momentum | Do not impersonate the creator, import signature language, or adopt fixed punctuation and endings |
+
+The runtime route contains the resulting decisions, not creator-specific voice
+samples. The research sources are comparative references rather than factual
+sources for generated articles.
 
 ## 3.0 Rebase Delta
 
@@ -94,7 +120,7 @@ baseline. Use the delta above when maintaining the 3.0.0 release.
 
 The first release must be at least as capable as `op7418/Humanizer-zh`.
 
-| Prior-art capability | Covered in `3.0.0-zh.2` |
+| Prior-art capability | Covered in `3.0.0-zh.3` |
 | --- | --- |
 | Preserve meaning and tone | Core Contract, Register Rules, Quality Gate |
 | Add voice only where appropriate | Register Rules, False Positives |

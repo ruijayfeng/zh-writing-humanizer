@@ -1,7 +1,7 @@
 {
   "name": "zh-writing-humanizer",
-  "version": "3.0.0-zh.2",
-  "description": "Chinese writing humanizer with routed technical-article voice and style guidance.",
+  "version": "3.0.0-zh.3",
+  "description": "Chinese writing humanizer with routed technical-article and public-account writing styles.",
   "license": "MIT",
   "private": false,
   "type": "commonjs",

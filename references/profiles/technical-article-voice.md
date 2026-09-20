@@ -1,9 +1,9 @@
-# Fengzhe Technical Voice
+# 技术文章写作风格
 
 This profile captures stable choices found across 111 prior articles on C++,
-Linux operating systems, and computer networks. It describes a writing voice,
-not a factual source. A new sample from the user overrides this profile where
-they differ.
+Linux operating systems, and computer networks. It describes a writing style,
+not an identity and not a factual source. A newer sample supplied by the user
+overrides this profile where they differ.
 
 ## Core Reader Experience
 
@@ -95,8 +95,8 @@ When two goals conflict, prefer them in this order:
 1. technical correctness and source fidelity;
 2. a complete, inspectable reasoning chain;
 3. the reader's ability to reconstruct the mechanism;
-4. the personal voice in this profile;
+4. the writing voice in this profile;
 5. surface polish.
 
-The target is the author's reasoning texture without the accidental roughness
-of a study draft.
+The target is the source corpus's reasoning texture without its accidental
+roughness or any embedded personal identifier.

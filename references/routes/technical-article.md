@@ -7,7 +7,7 @@ user asks to reshape the whole document.
 
 ## Resolve The Deliverable
 
-- **Explanatory article:** use this route, the Fengzhe technical voice profile,
+- **Explanatory article:** use this route, the technical article voice profile,
   and the Chinese technical conventions.
 - **Reference, manual, or runbook:** use the conventions only by default. Put the
   answer or instruction first and optimize for lookup.

@@ -5,8 +5,8 @@
 Draft a Chinese technical article that explains why parent and child processes
 can print the same virtual address while observing different values after the
 child writes to a global variable. The source provides code and real output but
-does not provide benchmark data. Use the project's personal technical-article
-voice.
+does not provide benchmark data. Use the project's technical-article writing
+style.
 
 ## Expected AI Traces
 
@@ -37,6 +37,6 @@ personal tutorial voice unless requested.
 
 - The explanatory route and reference-document route produce meaningfully
   different organization.
-- The personal profile changes reasoning shape without weakening accuracy.
+- The technical profile changes reasoning shape without weakening accuracy.
 - Code, output, identifiers, and source-supported relationships remain intact.
 - The ending answers the initial technical question without a generic summary.
