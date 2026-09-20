@@ -2,8 +2,26 @@
   "name": "zh-writing-humanizer",
   "version": "3.0.0-zh.3",
   "description": "Chinese writing humanizer with routed technical-article and public-account writing styles.",
+  "author": "凯冰",
   "license": "MIT",
   "private": false,
+  "homepage": "https://github.com/ruijayfeng/zh-writing-humanizer#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruijayfeng/zh-writing-humanizer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ruijayfeng/zh-writing-humanizer/issues"
+  },
+  "keywords": [
+    "agent-skill",
+    "ai-writing",
+    "chinese-writing",
+    "humanizer",
+    "technical-writing",
+    "wechat",
+    "zhihu"
+  ],
   "type": "commonjs",
   "bin": {
     "zh-writing-humanizer": "bin/install.js"
