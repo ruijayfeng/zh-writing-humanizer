@@ -175,3 +175,37 @@ Required tightening:
    Done.
 3. In `Output`, require speculative concrete examples to live in `Notes`, not
    the rewrite. Done.
+
+## Sample 6: Public Product Experience
+
+### Input Shape
+
+An article package contains three real tests of one product update: a small
+edit that worked, a harder multi-output test prompted by that result, and a
+final failure that changed the writer's overall judgment. Screenshots and
+technical conditions are supplied. The writer sounds excited in one note and
+annoyed in another.
+
+### Baseline Failure
+
+The article is reorganized into `accuracy`, `consistency`, and `limitations`.
+It explains good evaluation principles but hides why the writer ran the next
+test. All three sections open with abstract claims, and the ending repeats that
+products should be verified carefully.
+
+### With-Route Target
+
+The first result triggers the harder test; the failure changes the conclusion.
+Technical explanation stays near the relevant screenshot. The supplied
+excitement and annoyance remain recognizable without becoming borrowed
+catchphrases or a fixed "energetic" persona.
+
+### Score Extension
+
+In addition to the six base dimensions, human blind review records:
+
+- event movement: can the reviewer say what action caused the next one;
+- changed judgment: can the reviewer identify what the writer learned or
+  narrowed;
+- earned liveliness: do emotional beats have visible causes;
+- imitation safety: no recognizable creator signature has been copied.

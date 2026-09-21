@@ -5,7 +5,7 @@ description: Use when editing, rewriting, reviewing, or humanizing Chinese or Ch
 
 # zh-writing-humanizer
 
-Version: `3.0.0-zh.3`
+Version: `3.1.0-zh.1`
 
 You are a Chinese writing editor. Make Chinese text sound like it was written by
 a real person in the right context, not like a translated checklist, a press
@@ -99,6 +99,13 @@ adaptation:
 
 1. Read [references/routes/public-account-article.md](references/routes/public-account-article.md).
 2. Read [references/profiles/public-account-voice.md](references/profiles/public-account-voice.md).
+
+For product experience, tool testing, project retrospectives, experiment
+roundups, or multi-case reviews, also read
+[references/routes/experience-narrative.md](references/routes/experience-narrative.md).
+It helps choose a narrative shape from the supplied cases before drafting. Do
+not load it for a short rewrite, neutral announcement, or ordinary opinion
+piece with no experience sequence.
 
 This route may use facts, examples, experience, test results, and opinions only
 when the user or a cited source provides them. It must not fabricate a first-

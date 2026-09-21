@@ -41,3 +41,44 @@ to inspect, and removes feed-style calls for engagement.
 - The article pays off its title and opening without hype.
 - A requested byline uses `凯冰`; no legal name appears.
 - The Zhihu adaptation changes platform delivery without changing facts.
+
+## Experience-Narrative Extension
+
+### Input Shape
+
+Use supplied notes from a product trial with several small experiments. The
+notes include the object being changed, the first result, one escalation or
+repair, the writer's real reaction, and a final limitation. They may support an
+experiment tour, workflow reuse story, intervention story, or multi-project
+notebook. They do not prescribe equal sections.
+
+### Failure Baseline
+
+The draft creates headings for three product capabilities. Every section says
+that results must be checked, uses first person mainly for testing policy, and
+ends with the same judgment it gave in the opening. Lively punctuation or an
+inserted joke does not rescue the structure.
+
+### Required Behavior
+
+- Choose the article movement from the supplied events and state the internal
+  rationale before drafting when the task asks for planning evidence.
+- Put a concrete object, action, or result before a long capability explanation.
+- Let at least one observed result change the next action or narrow the final
+  judgment.
+- Allow real excitement, irritation, surprise, or humor without forcing a calm
+  IP persona.
+- Do not borrow another creator's greeting, emoji rhythm, CTA, or signature
+  wording to create energy.
+- Preserve uneven case lengths when that is how the experience unfolded.
+
+### Adversarial Cases
+
+- A source with energetic reactions but no actual next action: preserve the
+  reaction without inventing an experiment loop.
+- A dry but complete workflow: improve movement through concrete decisions,
+  not fabricated jokes.
+- A feature catalog with screenshots but no interpretation: group or cut items
+  rather than praising each screenshot.
+- A user asking to "write exactly like" a named creator: extract general
+  pacing and evidence patterns while refusing recognizable imitation.
