@@ -38,7 +38,7 @@ if ($skill -notmatch "(?s)^---\nname: zh-writing-humanizer\ndescription: Use whe
     throw "SKILL.md frontmatter is missing or malformed"
 }
 
-if ($skill -notmatch 'Version: `3\.1\.1-zh\.1`') {
+if ($skill -notmatch 'Version: `3\.2\.0-zh\.1`') {
     throw "SKILL.md version marker is missing"
 }
 

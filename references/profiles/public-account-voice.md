@@ -47,6 +47,12 @@ increased, repaired, or reconsidered after seeing a result. A draft dominated
 by `我会检查`, `我更在意`, or `我不会只看` can contain first person while still
 feeling like a testing policy rather than lived work.
 
+Do not confuse a normalized case card with lived voice. When the source already
+arranges every event as expectation, result, reaction, and lesson, recover the
+author's raw notes or write more plainly. Adding `我差点以为`, `有点惊喜`, or
+`让我意识到` to a structured record usually makes the construction more
+visible rather than more human.
+
 ### Make A Defensible Judgment
 
 Do not merely list features. Explain which change matters, to whom, in what
@@ -101,6 +107,13 @@ Avoid these failure modes:
   result, or change of mind;
 - artificial liveliness created by borrowed greetings, catchphrases, repeated
   exclamation marks, or inserted jokes that do not affect the task.
+- an overconstructed experience in which every defect escalates one thesis,
+  every section has the same complete loop, and every result is followed by an
+  explanation of what the reader should conclude;
+- emotion labels added to clean case notes without raw author wording or
+  behavioral evidence;
+- paired closing sentences written to sound quotable after the useful judgment
+  has already been delivered.
 
 ## Decision Priority
 

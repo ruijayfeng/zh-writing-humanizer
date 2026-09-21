@@ -64,6 +64,11 @@ when the first observable result arrives after a long block of product
 description, or when the ending repeats the opening judgment without anything
 having changed or narrowed it.
 
+An event-led structure can also fail by becoming too complete. If every section
+contains a clean setup, surprise, explanation, and lesson, the article reads as
+retrospective choreography. Preserve irregular source texture, leave some
+results uninterpreted, and do not make every defect serve one thesis.
+
 ## Enter Quickly
 
 Open with one of the following when the source supports it:
@@ -111,6 +116,9 @@ accounts, paid plans, technical setup, region access, or troubleshooting.
 - A short paragraph can create emphasis; repeated fragments cannot replace
   reasoning.
 - A personal reaction can reveal judgment; it cannot substitute for evidence.
+- Prefer supplied wording and behavior to generic reaction labels. Do not add
+  `我差点以为`, `有点惊喜`, `有点好笑`, or `这让我意识到` merely to simulate
+  presence.
 - Excitement, disappointment, surprise, irritation, and humor are welcome when
   a supplied event gives them a cause. Do not flatten public writing into a
   permanently calm or restrained persona.

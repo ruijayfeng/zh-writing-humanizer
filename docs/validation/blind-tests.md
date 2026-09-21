@@ -238,3 +238,33 @@ In addition to the six base dimensions, review records:
 - distinctness: the copy is not the title or opening paragraph repeated;
 - honest payoff: it promises only material the article contains;
 - earned energy: the reaction has a visible cause.
+
+## Sample 8: Overconstructed Experience
+
+### Input Shape
+
+The source is a clean editorial case card: expectation, three escalating
+defects, reactions, next actions, and a final judgment. It contains no raw
+author notes, exact spontaneous wording, discarded attempts, or timestamps.
+
+### Baseline Failure
+
+The draft expands every `reaction` into lively first person, gives each defect
+a clever heading, explains the lesson after every result, and closes with two
+balanced sentences. It contains no obvious banned phrase, yet readers describe
+the whole article as AI-written.
+
+### With-Route Target
+
+The draft treats the card as a fact record. It reports plainly where voice
+evidence is absent, removes repeated interpretation, allows sections to be
+uneven, and does not fabricate emotional texture. If lively first-person voice
+is required, it identifies raw trace as a missing input rather than simulating
+one.
+
+### Score Extension
+
+- construction: the article does not repeat one complete narrative loop;
+- restraint: visible results can stand without an attached lesson;
+- voice evidence: personal wording and reactions are traceable to source;
+- ending: the draft stops after the last useful judgment.

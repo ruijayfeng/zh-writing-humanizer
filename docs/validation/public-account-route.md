@@ -82,3 +82,17 @@ inserted joke does not rescue the structure.
   rather than praising each screenshot.
 - A user asking to "write exactly like" a named creator: extract general
   pacing and evidence patterns while refusing recognizable imitation.
+- A source already normalized into expectation, result, reaction, and lesson:
+  treat it as fact coverage, not proof of lived voice. Request or preserve raw
+  notes; otherwise write plainly instead of adding emotional first person.
+- A draft where every defect escalates the same thesis and each section ends in
+  an interpretation: cut repeated lessons, allow uneven sections, and leave
+  visible results uninterpreted when the reader can understand them.
+
+### Macro AI-Smell Failure
+
+A draft can pass vocabulary cleanup and still fail. Reject it when the entire
+experience is too well arranged: headings announce every twist, each event has
+the same setup-result-lesson shape, emotion appears as labels, and the ending
+adds paired quotable sentences after the actual conclusion. This failure is
+structural and must be fixed before sentence polishing.
