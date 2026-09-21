@@ -26,6 +26,8 @@ route:
 | Route-specific synthesis | Deliverable classification, reasoning spine, evidence use, and completion gate | `references/routes/technical-article.md` |
 | Public technology writing research plus the user's stable reasoning habits | Evidence for an accessible, practitioner-led public voice; never permission to impersonate another creator | `references/profiles/public-account-voice.md` |
 | Public-account route synthesis | WeChat topic checks, article shapes, source boundaries, platform pacing, and Zhihu adaptation | `references/routes/public-account-article.md` |
+| Experience narrative extension | Event-led sequencing, changed judgment, and evidence-backed emotional movement for tests and project stories | `references/routes/experience-narrative.md` |
+| Article share-copy extension | Downstream extraction of honest, platform-aware short copy from a finalized public article | `references/routes/article-share-copy.md` |
 
 The route deliberately separates explanatory articles from manuals and API
 references. Personal voice is the default for tutorials and mechanism

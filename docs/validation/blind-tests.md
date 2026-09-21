@@ -209,3 +209,32 @@ In addition to the six base dimensions, human blind review records:
   narrowed;
 - earned liveliness: do emotional beats have visible causes;
 - imitation safety: no recognizable creator signature has been copied.
+
+## Sample 7: Article Share Copy
+
+### Input Shape
+
+A finalized public article reports one successful product test, one failure,
+and a narrower conclusion. The title already names the product and version.
+The user asks for a short forwarding caption.
+
+### Baseline Failure
+
+The caption repeats the title, calls the product `太强了`, lists every section,
+and promises a complete tutorial even though the article contains no tutorial.
+
+### With-Route Target
+
+The caption opens with the specific result or failure that changed the
+writer's judgment, says what the article actually examines, and invites the
+reader without adding claims. Its energy comes from the event rather than
+generic praise or borrowed creator mannerisms.
+
+### Score Extension
+
+In addition to the six base dimensions, review records:
+
+- traceability: every claim exists in the finalized article;
+- distinctness: the copy is not the title or opening paragraph repeated;
+- honest payoff: it promises only material the article contains;
+- earned energy: the reaction has a visible cause.
