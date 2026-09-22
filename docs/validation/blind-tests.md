@@ -176,7 +176,7 @@ Required tightening:
 3. In `Output`, require speculative concrete examples to live in `Notes`, not
    the rewrite. Done.
 
-## Sample 6: Public Product Experience
+## Sample 6: Optional Public Product Experience Diagnosis
 
 ### Input Shape
 

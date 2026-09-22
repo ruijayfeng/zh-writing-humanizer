@@ -52,23 +52,6 @@ Select the lightest structure that fits the material:
 These are reasoning shapes. Merge, reorder, or skip moves that do not serve the
 article.
 
-For product experience, testing, workflow, or project material, choose the
-shape from the events rather than assigning notes to feature headings. Read
-`experience-narrative.md`. Before drafting, identify which cases establish a
-baseline, increase difficulty, transfer the idea, challenge the first reading,
-or close the question. Not every role needs a case, and sections do not need to
-be equal length.
-
-A structure has failed when several sections merely restate the same standard,
-when the first observable result arrives after a long block of product
-description, or when the ending repeats the opening judgment without anything
-having changed or narrowed it.
-
-An event-led structure can also fail by becoming too complete. If every section
-contains a clean setup, surprise, explanation, and lesson, the article reads as
-retrospective choreography. Preserve irregular source texture, leave some
-results uninterpreted, and do not make every defect serve one thesis.
-
 ## Enter Quickly
 
 Open with one of the following when the source supports it:
@@ -99,12 +82,6 @@ For product and tool articles:
 - include meaningful friction and failure, not ceremonial "pros and cons";
 - end with who should try it, who can skip it, or what remains unproven.
 
-When the material supports it, let the writer's next action grow from the
-result just shown: a success can invite a harder test; a defect can trigger a
-repair, workaround, or narrower claim; an irrelevant input can be discarded.
-This local movement is more useful than adding a generic transition between
-feature sections.
-
 For tutorials, give the reader an observable checkpoint after consequential
 steps. Do not call a tutorial "zero threshold" or "foolproof" when it requires
 accounts, paid plans, technical setup, region access, or troubleshooting.
@@ -116,12 +93,6 @@ accounts, paid plans, technical setup, region access, or troubleshooting.
 - A short paragraph can create emphasis; repeated fragments cannot replace
   reasoning.
 - A personal reaction can reveal judgment; it cannot substitute for evidence.
-- Prefer supplied wording and behavior to generic reaction labels. Do not add
-  `我差点以为`, `有点惊喜`, `有点好笑`, or `这让我意识到` merely to simulate
-  presence.
-- Excitement, disappointment, surprise, irritation, and humor are welcome when
-  a supplied event gives them a cause. Do not flatten public writing into a
-  permanently calm or restrained persona.
 - A callback to the opening can create closure when the article has genuinely
   changed the reader's understanding.
 - A broader reflection belongs only when it grows directly from the case. End

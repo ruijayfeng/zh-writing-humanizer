@@ -42,11 +42,11 @@ to inspect, and removes feed-style calls for engagement.
 - A requested byline uses `凯冰`; no legal name appears.
 - The Zhihu adaptation changes platform delivery without changing facts.
 
-## Experience-Narrative Extension
+## Optional Experience-Narrative Diagnosis
 
 ### Input Shape
 
-Use supplied notes from a product trial with several small experiments. The
+When the user explicitly requests a story map or structural diagnosis, use supplied notes from a product trial with several small experiments. The
 notes include the object being changed, the first result, one escalation or
 repair, the writer's real reaction, and a final limitation. They may support an
 experiment tour, workflow reuse story, intervention story, or multi-project
@@ -59,7 +59,7 @@ that results must be checked, uses first person mainly for testing policy, and
 ends with the same judgment it gave in the opening. Lively punctuation or an
 inserted joke does not rescue the structure.
 
-### Required Behavior
+### Expected Behavior When Invoked
 
 - Choose the article movement from the supplied events and state the internal
   rationale before drafting when the task asks for planning evidence.

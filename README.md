@@ -81,11 +81,11 @@ npx github:ruijayfeng/zh-writing-humanizer
 npx zh-writing-humanizer
 ```
 
-npm 当前公开版本仍为 `2.8.0-zh.1`。`3.2.0-zh.1` 发布到 npm 后，这条命令才会安装本文介绍的文章写作路线、体验叙事增强、宏观去 AI 审查与文章配文模式。
+npm 当前公开版本仍为 `2.8.0-zh.1`。`3.2.1-zh.1` 发布到 npm 后，这条命令才会安装本文介绍的文章写作路线与文章配文模式。体验叙事诊断需明确提出结构规划需求才会启用。
 
 安装器会把 `SKILL.md`、Agent 元数据和运行时引用文件复制到当前 Agent 的技能目录。项目级使用时，也可以把整个 skill 安装到项目自己的 `.codex/skills/` 下。
 
-当前仓库版本：`3.2.0-zh.1`
+当前仓库版本：`3.2.1-zh.1`
 
 ## 使用示例
 
@@ -217,7 +217,7 @@ zh-writing-humanizer/
 
 ## 版本与上游
 
-- 当前版本：`3.2.0-zh.1`
+- 当前版本：`3.2.1-zh.1`
 - 主要上游：[`blader/humanizer`](https://github.com/blader/humanizer) `3.0.0`
 - 中文本地化参考：[`op7418/Humanizer-zh`](https://github.com/op7418/Humanizer-zh)
 - 技术文档规范参考：[`ruanyf/document-style-guide`](https://github.com/ruanyf/document-style-guide)

@@ -5,7 +5,7 @@ description: Use when editing, rewriting, reviewing, or humanizing Chinese or Ch
 
 # zh-writing-humanizer
 
-Version: `3.2.0-zh.1`
+Version: `3.2.1-zh.1`
 
 You are a Chinese writing editor. Make Chinese text sound like it was written by
 a real person in the right context, not like a translated checklist, a press
@@ -100,12 +100,12 @@ adaptation:
 1. Read [references/routes/public-account-article.md](references/routes/public-account-article.md).
 2. Read [references/profiles/public-account-voice.md](references/profiles/public-account-voice.md).
 
-For product experience, tool testing, project retrospectives, experiment
-roundups, or multi-case reviews, also read
-[references/routes/experience-narrative.md](references/routes/experience-narrative.md).
-It helps choose a narrative shape from the supplied cases before drafting. Do
-not load it for a short rewrite, neutral announcement, or ordinary opinion
-piece with no experience sequence.
+For a product experience article, use the public-account route above by
+default. Read [references/routes/experience-narrative.md](references/routes/experience-narrative.md)
+only when the user asks for an explicit story map, experiment structure, or
+structural diagnosis. Its case cards and local loops are optional planning
+instruments, never a required outline or source of author voice. Draft from the
+original material, and preserve useful detail and natural article length.
 
 This route may use facts, examples, experience, test results, and opinions only
 when the user or a cited source provides them. It must not fabricate a first-
@@ -371,13 +371,8 @@ problem.
 3. Mark source-supported facts separately from missing or vague claims.
 4. Draft a conservative rewrite that preserves claims and paragraph intent.
 5. Audit the draft by asking: `What still makes this sound AI-written?`
-6. For route-based experience writing, audit the whole article as well as its
-   sentences: check for repeated event loops, a lesson after every result,
-   generic emotion labels, uniformly clever headings, and a closing written to
-   sound quotable. Compare lively first-person wording with the supplied raw
-   trace; a normalized case card alone is not voice evidence.
-7. Revise once more.
-8. Before final output, check for invented facts, register drift, empty endings,
+6. Revise once more.
+7. Before final output, check for invented facts, register drift, empty endings,
    leftover chatbot artifacts, and lost rankings, quantities, dates, quotations,
    citations, or simultaneity claims.
 
@@ -426,7 +421,6 @@ Score the final rewrite before returning it:
 | Specificity | Empty abstractions are replaced by concrete actors, actions, or limits. |
 | Rhythm | Sentence lengths vary naturally without manufactured drama. |
 | Trust | The text trusts readers and avoids over-explaining obvious points. |
-| Construction | Experience prose preserves uneven source texture and does not turn every event into the same complete lesson loop. |
 | Cleanliness | Chatbot artifacts, slogan closers, and decorative formatting are gone. |
 
 If any dimension fails, revise before answering.
